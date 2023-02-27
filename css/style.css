@@ -1,0 +1,554 @@
+@charset "UTF-8";
+
+/*------------------
+* body
+------------------*/
+html {
+    font-size: 63%;
+}
+body {
+    color: #746464;
+    font-size: 1.8rem;
+    font-family: 'Zen Old Mincho', 'Merriweather', serif;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+.site-title {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.9rem;
+
+}
+.site-subtitle {
+    margin-left: -1rem;
+    margin-top: -0.1rem;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    text-align: center;
+    letter-spacing: 0.01rem;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: #746464;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:link, a:visited {
+    color: inherit;
+}
+.btn {
+    font-size: 1.9rem;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #dbdbdb;
+    border-radius: 50px 25px 50px 50px / 50px 25px 50px 25px;
+    width: 150px;
+    margin: 20px auto;
+    margin-bottom: 150px;
+    display: block;
+    letter-spacing: 0.5rem;
+    transition: all 0.5s;
+}
+.btn:hover {
+    color: #75b36f;
+}
+
+/*------------------
+* mainvisual
+------------------*/
+.hero {
+    background-image: url("../images/top/mainvisual.png");
+    background-size: cover;
+    margin-bottom: 150px;
+    width: 100vw;
+    height: 50vw;
+}
+
+
+/*------------------
+* header
+------------------*/
+.lg {
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+#header ul {
+    position: fixed;
+    z-index: 100;
+}
+#header li {
+    margin: 0 auto 5px 10px;
+    font-size: 1.6rem;
+    transition: all 0.5s;
+}
+#header li:hover {
+    color: #75b36f;
+}
+#g-nav {
+    display: none;
+}
+/*------------------
+* footer
+------------------*/
+#footer {
+    font-family: 'Zen Old Mincho', serif; ;
+    text-align: center;
+    margin-top: 150px;
+    padding-bottom: 10px;
+}
+
+/*------------------
+* works
+------------------*/
+.works-area {
+    text-align: center;
+}
+#works .works-site {
+    font-size: 2.5rem;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+/*------------------
+* about
+------------------*/
+.about-area {
+    text-align: center;
+}
+
+
+/*------------------
+* profiel
+------------------*/
+.profile-area {
+    text-align: center;
+}
+.profile-text h2 {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+.profile-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 30px;
+    background-image: contain;
+    padding: 3rem;
+    letter-spacing: 0.5rem;
+}
+.profile-text p{
+    margin-bottom: 30px;
+}
+.mypic {
+    margin-right: 3rem;
+    width: 371px;
+}
+.profile-area p {
+    text-align: center;
+}
+.motto {
+    text-align: center;
+}
+.motto-text {
+    margin: 50px;
+}
+.motto .psite-title {
+    margin-top: -10rem;
+    margin-bottom: 0.3rem;
+}
+.motto-text h2{
+    margin-bottom: 3rem;
+    letter-spacing: 1rem;
+}
+
+/*------------------
+* contact
+------------------*/
+.contact-area {
+    text-align: center;
+}
+.contact-text p {
+    margin: 2rem; 
+    font-family: 'Zen Old Mincho', serif;
+}
+#contact .btn {
+    margin-top: 3rem;
+    width: 250px;
+    letter-spacing: 0.3rem;
+}
+
+/*------------------
+* レスポンシブ
+------------------*/
+
+@media screen and (max-width: 750px) {
+    
+    .body {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 2.5rem;
+    }
+    .sut-title {
+        font-size: 0.9rem;
+    }
+    .lg {
+        margin-top: -10px;
+    }
+    #header .main-nav {
+        flex-direction: column;
+        height: 120px;
+        margin-left: -1rem;
+        padding-top: 20px;
+    }
+  
+    .works-area p{
+        font-size: 1.5rem;
+    }
+    .profile-text h2 {
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+    }
+    .profile-area {
+        display: block;
+        width: 100%;
+    }
+    
+    .profile-text p {
+        margin: 1rem;
+    }
+    .mypic {
+        margin-left: 5rem; 
+    }
+    .motto .psite-title {
+        margin-top: 7rem;
+    }
+    .motto-text p {
+        margin-bottom: 7rem;
+    }
+    /*=== ハンバーガーメニュー ===*/
+    .main-nav {
+        display: block;
+    }
+    #g-nav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .site-title {
+        font-size: 2rem;
+    }
+    .site-subtitle {
+        font-size: 1.6rem;
+    }
+    .btn {
+        font-size: 1.5rem;
+        width: 120px;
+        margin-bottom: 8rem;
+    }
+   .about-text p {
+        font-size: 1.5rem;
+    }
+    .profile-text p {
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .mypic {
+        margin-left: 2rem;
+        margin-top: -4rem;
+        width: 271px;
+    }
+    .contact-text p {
+        font-size: 1.4rem;
+    }
+    #contact .btn {
+        width: 150px;
+    }
+ 
+    #footer {
+        font-size: 1.3rem;
+    }
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+    .main-nav {
+        display: none;
+    }
+    #g-nav{
+        position:fixed;
+        z-index: 999;
+        top:0;
+        left: -120%;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background-color: rgba(116, 141, 120, 0.9);
+        transition: all 0.6s;
+        display: block;
+    }
+
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive{
+        left: 0;
+    }
+
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list{
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999; 
+        width:100%;
+        height: 100vh;/*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:45%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        margin-left: -1rem;
+        opacity: 0.8;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav .lg {
+        margin-left: -0.05rem;
+    }
+    #g-nav li{
+        list-style: none;
+        text-align: center; 
+    }
+    #g-nav li a{
+        color:#382727; 
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 14px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+
+            
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        right: 14px;
+        height: 1.5px;
+        border-radius: 1px;
+        background-color: #453945; 
+        width: 55%;
+    }
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 14px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 40%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 14px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 40%;
+    }
+    .motto-text p {
+        font-size: 1.1rem;
+    }
+}
+
+/*---------------------
+* プロフィールページ
+---------------------*/
+
+.psite-title {
+    font-size: 3rem;
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+}
+.psite-subtitle {
+    text-align: center;
+
+}
+.motto .psite-title {
+    font-size: 3rem;
+}
+.skills-area {
+    text-align: center;
+    margin: 80px auto 10px;
+    width: fit-content;
+    padding: 60px;
+    background-color: #aad1a7;
+    border-radius: 160px 75px 150px 125px / 70px 55px 130px 150px ;
+}
+.skill-categories li {
+    font-size: 2.3rem;
+    margin: 20px;
+    color: #503f3f;
+}
+.skill-categories ul {
+    display: flex;
+    justify-content: space-between;
+}
+.strengths-area {
+    margin: 50px 100px 10px 185px; 
+    width: fit-content;
+    padding: 60px;
+}
+.strength-contents {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.strengths-text {
+    margin: 30px;
+    width: 43%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    background-color: #ebebeb;
+    border-radius: 160px 75px 150px 125px / 70px 55px 130px 150px ;
+    
+}
+.strengths-text h2 {
+    font-size: 3rem;
+    margin-top: -1rem;
+    padding: 10px;
+}
+@media screen and (max-width:750px) {
+    .psite-title {
+        padding-top: 10px;
+    }
+    .skills-area {
+        text-align: center;
+        margin: 80px auto 80px;
+        width: fit-content;
+        padding: 40px;
+        background-color: #aa8484;
+        border-radius: 160px 75px 150px 125px / 70px 55px 130px 150px ;
+    }
+    .skill-categories li {
+        font-size: 1.5rem;
+        margin: 15px;
+        color: #645252;
+    }
+    .strengths-area {
+        margin: 9px auto 3px; 
+        width: fit-content;
+        padding: 15px;
+    }
+    .strength-contents {
+        padding: 20px;
+    }
+    .strengths-text {
+        font-size: 1.4rem;
+        margin: 10px;
+        width: 45%;
+        justify-content: space-between;
+        text-align: center;
+        padding: 37px;
+        background-color: #ebebeb;
+        border-radius: 160px 75px 150px 125px / 70px 55px 130px 150px ;
+        
+    }
+    .strengths-text h2 {
+        font-size: 2rem;
+    }
+    .strengths-text p {
+        margin-top: -0.25rem;
+    }
+}
+@media screen and (max-width: 480px) {
+
+
+    .skill-categories ul {
+        display: block;
+        margin: -1rem;
+    }
+    .skills-area {
+        text-align: center;
+        margin: 40px auto 50px;
+        padding: 30px;
+        border-radius: 10px 55px 10px 70px / 170px 105px 130px 90px ;
+    }
+    .skill-categories li {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .strengths-area {
+        margin: 0px auto 10px; 
+        width: fit-content;
+        padding: 10px;
+    }
+    .strength-contents {
+        padding: 20px;
+        display: block;
+    
+    }
+    .strengths-text {
+        font-size: 1.4rem;
+        width: 75%;
+        justify-content: space-between;
+        margin-left: 3rem;
+        padding: 27px;
+        border-radius: 160px 75px 150px 125px / 70px 55px 130px 150px ;
+        
+    }
+    .strengths-text h2 {
+        font-size: 2rem;
+    }
+    .strengths-text p {
+        margin-top: -0.25rem;
+        font-size: 1.3rem;
+    }
+}
